@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 
 import com.alexmarques2003.api.security.entities.Usuario;
@@ -12,6 +13,7 @@ import com.alexmarques2003.api.security.repositories.UsuarioRepository;
 import com.alexmarques2003.api.utils.SenhaUtils;
 
 @SpringBootApplication
+@EnableCaching
 public class MeuPrimeiroProjetoJwtApplication {
 	
 	@Autowired
